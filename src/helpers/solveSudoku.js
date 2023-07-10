@@ -52,7 +52,7 @@ export const solveSudoku = (mt) => {
       return false;
     }
   }
-  async function init() {
+  function init() {
     solve(mt);
     return mt;
   }

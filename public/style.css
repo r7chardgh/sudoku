@@ -1,0 +1,72 @@
+:root{
+    --main-tone:#3885b9;
+    --solved-tone:#444444;
+    --unsolved-tone:#245677;
+}
+body,html{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+.num{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+}
+.num.quiz{
+    font-weight: 700;
+    user-select:none;
+}
+.num > span{
+content:"";
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 90%;
+height: 90%;
+border-radius: 50%;
+}
+.num.active > span {
+    background: var(--main-tone);
+}
+.num.quiz > span {
+    background: var(--solved-tone);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn {
+    position: relative;
+    padding: .5em 1em;
+    transform: rotateX(30deg);
+    border-radius: .2em;
+    border: 1px solid #3f3f3f;
+    box-shadow: 0 .3em 0 .1em #3f3f3f;
+    ;
+    transition: all 150ms;
+    background: #fff;
+  }
+
+  .btn:active {
+    transform: rotateX(30deg) translateY(.3em);
+    box-shadow: 0 0 0 0 #3f3f3f;
+  }

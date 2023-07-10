@@ -1,7 +1,5 @@
-import { solveSudoku } from "./helpers/solveSudoku.js";
-import { board } from "./helpers/board.js";
-
-
+import { solveSudoku } from "./helpers/solveSudoku";
+import { board } from "./helpers/board";
 //TODO - add more quiz
 const mt = [
   [0, 7, 0, 0, 0, 1, 5, 0, 3],
